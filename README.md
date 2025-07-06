@@ -2,29 +2,6 @@
 
 Pequeno aplicativo de notícias que permite aos usuários listar e salvar suas notícias favoritas no localStorage. Feito em apenas 1 dia (algo em torno de 8h total).
 
-## Imagens do Projeto
-
-![Tela Inicial](public/home.png)
-_Tela inicial_
-
-![Tela Notícias em branco](public/categoria_blank.png)
-_Tela noticias caso não existam artigos_
-
-![Tela Noticias com Artigos](public/categoria.png)
-_Tela noticias com artigos_
-
-![Tela Favoritos](public/favoritos_blank.png)
-_Tela favoritos_
-
-![Tela Favoritos com Artigos Salvos](public/favoritos.png)
-_Tela favoritos com artigos salvos_
-
-![Tela Inicial em Dark Mode](public/home_dark.png)
-_Tela inicial em dark mode_
-
-![Tela Favoritos em Dark Mode](public/favoritos_dark.png)
-_Tela favoritos em dark mode_
-
 ## O Que foi utilizado
 
 - [Vite](https://vitejs.dev/)
@@ -55,6 +32,38 @@ _Tela favoritos em dark mode_
 
 ## Decisões técnicas principais
 
+- Fazer o maximo possivel em apenas 1 dia.
+- Mentalidade MVP (Minimum Viable Product) focado em funcionalidades.
+- Orientado ao frontend.
+- Implementar dark mode.
+- Implementar pwa.
+
 ## O que faria com mais tempo
 
-Com certeza substituiria o vite pelo nextjs.
+- Substituiria o vite pelo nextjs.
+- Salvaria em localStorage as preferencias visuais do usuário.
+- Adicionaria filtros em todas as páginas em vez de uma busca simples apenas na listagem de noticias.
+- Adicionaria teste.
+
+## Imagens do Projeto
+
+![Tela Inicial](public/home.png)
+_Tela inicial_
+
+![Tela Notícias em branco](public/categoria_blank.png)
+_Tela noticias caso não existam artigos_
+
+![Tela Noticias com Artigos](public/categoria.png)
+_Tela noticias com artigos_
+
+![Tela Favoritos](public/favoritos_blank.png)
+_Tela favoritos_
+
+![Tela Favoritos com Artigos Salvos](public/favoritos.png)
+_Tela favoritos com artigos salvos_
+
+![Tela Inicial em Dark Mode](public/home_dark.png)
+_Tela inicial em dark mode_
+
+![Tela Favoritos em Dark Mode](public/favorito_dark.png)
+_Tela favoritos em dark mode_
