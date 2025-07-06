@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+body {
+  @apply dark:bg-gray-800 dark:text-stone-100;
+}
+
+#root {
+  @apply h-screen w-screen;
+}
