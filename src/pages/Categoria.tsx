@@ -14,20 +14,19 @@ import { useState } from 'react';
 import SearchBar from '../components/SearchBar';
 
 export default function Categoria() {
-  const { id } = useParams();
+  const { id } = useParams(); // Pega o id da categoria da URL
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const searchQuery = queryParams.get('search');
   const { data, error } = getNews(id, searchQuery);
   const errorMessage = extractErrorMessage([error]);
   const sourceName = extractSourceName(data);
-  const [refresh, setRefresh] = useState(0); // Estado para forçar re-renderização
+  const [refresh, setRefresh] = useState(0);
 
+  // Atualiza o estado para forçar re-renderização
   const handleRefresh = () => {
-    setRefresh((prev) => prev + 1); // Atualiza o estado para forçar re-renderização
+    setRefresh((prev) => prev + 1);
   };
-
-  console.log('Categoria', id, 'Search Query:', searchQuery);
 
   return (
     <>

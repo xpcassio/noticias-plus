@@ -12,6 +12,7 @@ export default function Home() {
   const { data: dataSports, error: errorSports } = getCategories('sports');
   const { data: dataTech, error: errorTech } = getCategories('technology');
 
+  // Extrai mensagens de erro de todas as chamadas de API
   const errorMessage = extractErrorMessage([
     errorBiz,
     errorEnt,

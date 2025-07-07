@@ -28,7 +28,10 @@ Pequeno aplicativo de notícias que permite aos usuários listar e salvar suas n
    - Não esqueça de copiar a API key que vai ser gerada.
 
 3. Configure o arquivo .env.local com a API key.
+
    - Nele se encontram as variáveis para acessar a API de notícias. Para ver os tratamentos de erros, basta deixar em branco ou colocar algo errado.
+
+4. Rode `npm run dev` para iniciar o ambiente local.
 
 ## Decisões técnicas principais
 
@@ -37,13 +40,16 @@ Pequeno aplicativo de notícias que permite aos usuários listar e salvar suas n
 - Orientado ao frontend.
 - Implementar dark mode.
 - Implementar pwa.
+- Utilizar React + TypeScript
 
 ## O que faria com mais tempo
 
-- Substituiria o vite pelo nextjs.
-- Salvaria em localStorage as preferencias visuais do usuário.
-- Adicionaria filtros em todas as páginas em vez de uma busca simples apenas na listagem de noticias.
+- Substituiria o vite pelo nextjs. Optei pelo vite pois tenho mais experiencia com esta ferramenta e iriamos utilizar apenas o App Router do next.
+- Salvaria em localStorage as preferencias visuais do usuário. Ou mudar para gerenciamento de estado.
+- Adicionaria filtros em todas as páginas em vez de uma busca simple.
 - Adicionaria teste.
+- Adicionaria analytics.
+- Deixaria mais dinâmico. Oferecendo ao usuário a chance de escolher o tema, as fontes de noticias e o pais.
 
 ## Imagens do Projeto
 
@@ -56,7 +62,7 @@ _Tela noticias caso não existam artigos_
 ![Tela Noticias com Artigos](public/categoria.png)
 _Tela noticias com artigos_
 
-![Tela Favoritos](public/favoritos_blank.png)
+![Tela Favoritos](public/favorito_blank.png)
 _Tela favoritos_
 
 ![Tela Favoritos com Artigos Salvos](public/favoritos.png)

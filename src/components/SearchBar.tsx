@@ -8,21 +8,19 @@ export default function SearchBar() {
   const searchQuery = queryParams.get('search');
   const [query, setQuery] = useState(searchQuery || '');
 
+  // Faz com que visualmente o input mude
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(event.target.value);
   };
 
   return (
-    <form
-      //   onSubmit={handleSearch}
-      className="bg-gray-100 dark:bg-gray-600 rounded-3xl p-4 mt-4 flex items-center"
-    >
+    <form className="bg-gray-100 dark:bg-gray-600 rounded-3xl p-4 mt-4 flex items-center">
       <input
         name="search"
         type="text"
         value={query}
         onChange={handleInputChange}
-        placeholder="Buscar artigos..."
+        placeholder="Buscar artigos"
         className="flex-grow bg-transparent border-none outline-none text-gray-800 dark:text-gray-200"
       />
       <button

@@ -8,15 +8,16 @@ import InfoAlert from '../components/InfoAlert';
 
 export default function Favoritos() {
   const [savedArticles, setSavedArticles] = useState<ArticleItem[]>([]);
-  const [refresh, setRefresh] = useState(0); // Estado para forçar re-renderização
+  const [refresh, setRefresh] = useState(0);
 
   useEffect(() => {
     const articles = getSavedArticles();
     setSavedArticles(articles);
   }, [refresh]);
 
+  // Atualiza o estado para forçar re-renderização
   const handleRefresh = () => {
-    setRefresh((prev) => prev + 1); // Atualiza o estado para forçar re-renderização
+    setRefresh((prev) => prev + 1);
   };
 
   return (
